@@ -159,7 +159,8 @@ p {
 }
 
 .feature-box {
-  max-width: 30%;
+  width: 300px;
+  height: 100%;
   text-align: center;
   border-radius: 20px;
   padding: 50px 20px 50px 20px;
@@ -257,9 +258,29 @@ body > section.forthsection > div > button:nth-child(3) {
   border: 1px solid white;
 }
 
-@media (max-width: 600px) {
+.first-three-food {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.second-three-foods {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* @media (max-width: 600px) {
   .thirdsection {
     flex-wrap: wrap;
     flex-direction: column;
   }
-}
+} */
