@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,8 +21,9 @@ p {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 30px;
   color: #3a3a3a;
+  font-family: 'Inria Sans', sans-serif;
 }
 
 h3,
@@ -36,10 +42,10 @@ h4 {
 }
 
 .header {
-  position: relative;
-  z-index: 1;
-  background-color: white;
-  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fa8190;
 }
 
 /*navigation*/
@@ -53,11 +59,11 @@ h4 {
   list-style: none;
   text-decoration: none;
   justify-content: end;
-  margin-right: 200px;
 }
 
 .nav-item {
   padding-right: 30px;
+  font-family: 'Inria Sans', sans-serif;
 }
 
 .nav-link {
@@ -68,7 +74,6 @@ h4 {
 
 .firstSection {
   height: auto;
-  background-color: #bf0a1f;
 }
 
 .section1 {
@@ -78,14 +83,14 @@ h4 {
   overflow-x: hidden;
 }
 
-.section1-content {
+/* .section1-content {
   width: 50%;
   height: 60rem;
   padding: 150px;
   padding-top: 200px;
   background-color: white;
   border-radius: 0% 100% 100% 0%;
-}
+} */
 
 .section1-content h1 {
   font-size: 80px;
@@ -99,44 +104,33 @@ p {
   margin-bottom: 20px;
 }
 
-.food1 {
-  position: absolute;
-  width: 35%;
-  margin-top: 50px;
-  margin-right: 150px;
-}
-
 .section1-content2 {
-  width: 35rem;
+  width: 50px;
   margin-top: 80px;
 }
 
 .secondsection {
   height: auto;
-  width: 100%;
+  width: auto;
   background-color: #fbf9f9;
-  position: relative;
-  margin-top: -150px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .secondsection-content1 {
   padding: 50px;
-  width: 50%;
 }
 
 .food2 {
-  width: 80%;
-  margin-left: 100px;
-  margin-top: 100px;
+  width: 350px;
 }
 
 .secondsection-content2 {
-  width: 40%;
-  padding: 50px;
-  margin-top: 150px;
-  margin-left: -100px;
+  width: 400px;
+  padding: 40px;
+  margin-top: 20px;
 }
 
 .chili {
@@ -155,6 +149,7 @@ p {
   gap: 51px;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
   /* margin: 100px 200px 50px 200px; */
 }
 
@@ -263,6 +258,7 @@ body > section.forthsection > div > button:nth-child(3) {
   column-gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  /* padding: 50px; */
 }
 
 .second-three-foods {
@@ -270,6 +266,7 @@ body > section.forthsection > div > button:nth-child(3) {
   column-gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  /* padding: 50px; */
 }
 
 .feature-boxes {
